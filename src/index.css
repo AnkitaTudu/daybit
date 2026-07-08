@@ -4,3 +4,32 @@
   --font-pixel: "Press Start 2P", monospace;
   --font-pixel-body: "Silkscreen", monospace;
 }
+
+/* Theme 1: default dark pixel theme (matches what you already have) */
+.theme-dark {
+  --color-bg: #0f172a;         /* slate-900 */
+  --color-surface: #1e293b;    /* slate-800 */
+  --color-accent: #34d399;     /* emerald-400 */
+  --color-accent-soft: rgba(52, 211, 153, 0.2);
+  --color-text: #e2e8f0;       /* slate-200 */
+  --color-text-muted: #94a3b8; /* slate-400 */
+}
+
+/* Theme 2: pastel girly theme */
+.theme-pastel {
+  --color-bg: #fdf2f8;         /* pink-50 */
+  --color-surface: #fce7f3;    /* pink-100 */
+  --color-accent: #ec4899;     /* pink-500 */
+  --color-accent-soft: rgba(236, 72, 153, 0.2);
+  --color-text: #831843;       /* pink-900 */
+  --color-text-muted: #be185d; /* pink-700 */
+}
+html, body, #root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg); color: var(--color-text);
+}
