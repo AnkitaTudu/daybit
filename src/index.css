@@ -5,25 +5,6 @@
   --font-pixel-body: "Silkscreen", monospace;
 }
 
-/* Theme 1: default dark pixel theme (matches what you already have) */
-.theme-dark {
-  --color-bg: #0f172a;         /* slate-900 */
-  --color-surface: #1e293b;    /* slate-800 */
-  --color-accent: #34d399;     /* emerald-400 */
-  --color-accent-soft: rgba(52, 211, 153, 0.2);
-  --color-text: #e2e8f0;       /* slate-200 */
-  --color-text-muted: #94a3b8; /* slate-400 */
-}
-
-/* Theme 2: pastel girly theme */
-.theme-pastel {
-  --color-bg: #fdf2f8;         /* pink-50 */
-  --color-surface: #fce7f3;    /* pink-100 */
-  --color-accent: #ec4899;     /* pink-500 */
-  --color-accent-soft: rgba(236, 72, 153, 0.2);
-  --color-text: #831843;       /* pink-900 */
-  --color-text-muted: #be185d; /* pink-700 */
-}
 html, body, #root {
   min-height: 100%;
   margin: 0;
@@ -31,5 +12,61 @@ html, body, #root {
 }
 
 body {
-  background-color: var(--color-bg); color: var(--color-text);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Theme 1: dark */
+.theme-dark {
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-accent: #34d399;
+  --color-accent-soft: rgba(52, 211, 153, 0.2);
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --sidebar-image: url('/images/dark-sidebar.jpg');
+
+  color: var(--color-text);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('/images/dark-bg-new.jpeg');
+}
+
+/* Theme 2: pastel */
+.theme-pastel {
+  --color-bg: #fdf2f8;
+  --color-surface: #fce7f3;
+  --color-accent: #ec4899;
+  --color-accent-soft: rgba(236, 72, 153, 0.2);
+  --color-text: #831843;
+  --color-text-muted: #be185d;
+  --sidebar-image: url('/images/pastel-sidebar.jpeg');
+
+  color: var(--color-text);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url('/images/pastel-bg-new.jpeg');
+}
+
+/* Theme 3: capybara */
+.theme-capybara {
+  --color-bg: #f0e4d0;
+  --color-surface: #e8dcc8;
+  --color-accent: #8b6f47;
+  --color-accent-soft: rgba(139, 111, 71, 0.2);
+  --color-text: #4a3728;
+  --color-text-muted: #7a5f42;
+  --sidebar-image: url('/images/capybara-sidebar-new.jpeg');
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.sidebar-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    var(--sidebar-image);
+  background-size: cover;
+  background-position: center;
 }

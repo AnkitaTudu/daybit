@@ -39,6 +39,13 @@ function App() {
     setNewHabitName('')
   }
 
+  function cycleTheme() {
+  const themeOrder = ['theme-dark', 'theme-pastel', 'theme-capybara']
+  const currentIndex = themeOrder.indexOf(theme)
+  const nextIndex = (currentIndex + 1) % themeOrder.length
+  setTheme(themeOrder[nextIndex])
+}
+
   function toggleHabit(id) {
     const today = new Date().toDateString()
     const yesterday = new Date()
@@ -87,12 +94,12 @@ function App() {
 
   return (
     <div className="flex min-h-screen">
-      <Sidebar
-        view={view}
-        onNavigate={setView}
-        theme={theme}
-        onToggleTheme={() => setTheme(theme === 'theme-dark' ? 'theme-pastel' : 'theme-dark')}
-      />
+     <Sidebar
+  view={view}
+  onNavigate={setView}
+  theme={theme}
+  onToggleTheme={cycleTheme}
+/>
 
       <div className="flex-1 p-8" style={{ color: 'var(--color-text)' }}>
         {view === 'home' && (

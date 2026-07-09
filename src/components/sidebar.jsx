@@ -9,9 +9,8 @@ function Sidebar({ view, onNavigate, theme, onToggleTheme }) {
 
   return (
     <div
-      className="w-56 min-h-screen flex flex-col p-4 gap-2"
-      style={{ backgroundColor: 'var(--color-surface)' }}
-    >
+  className="w-56 min-h-screen flex flex-col p-4 gap-2 sidebar-bg"
+>
       <h1 className="font-pixel text-sm mb-4" style={{ color: 'var(--color-accent)' }}>
         daybit
       </h1>
@@ -35,7 +34,7 @@ function Sidebar({ view, onNavigate, theme, onToggleTheme }) {
         className="mt-auto flex items-center gap-2 px-3 py-2 rounded-lg text-left font-pixel-body text-sm"
         style={{ backgroundColor: 'var(--color-accent)', color: 'var(--color-bg)' }}
       >
-        🎨 {theme === 'theme-dark' ? 'Pastel mode' : 'Dark mode'}
+       🎨 {theme === 'theme-dark' ? 'Pastel' : theme === 'theme-pastel' ? 'Capybara' : 'Dark'} mode 
       </button>
     </div>
   )
