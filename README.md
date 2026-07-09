@@ -32,4 +32,7 @@ npm run dev
 ```
 
 ## Screenshots
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/406fda79-d7fb-49bc-8c07-dffc0e50615a" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/5f3035c7-dc76-44e3-8253-be1b99cfcb9c" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/e4acf35a-ef2e-4df4-be40-5e78586f656e" />
 
