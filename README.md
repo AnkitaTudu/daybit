@@ -33,4 +33,3 @@ npm run dev
 
 ## Screenshots
 
-_Add a screenshot or two here of your favorite theme!_
