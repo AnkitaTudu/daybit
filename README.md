@@ -1,16 +1,36 @@
-# React + Vite
+# 🌱 daybit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cozy, pixel-art-inspired habit tracker, notes app, and calendar — built as a personal productivity space with a soft retro-game feel.
 
-Currently, two official plugins are available:
+**Live demo:** [https://daybit-cozy.netlify.app/]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- ✅ **Habit tracking** — add, complete, and delete daily habits with streak tracking
+- 📝 **Notes** — quick jot-it-down notes with delete support
+- 📅 **Calendar** — mark important dates and events on a custom-built month view
+- 📊 **Stats** — a weekly bar chart visualizing habit completion history
+- 🎨 **Three switchable themes** — Dark, Pastel, and Capybara mode, each with its own color palette and background art
+- 🕹️ Retro pixel-art aesthetic using custom fonts and pixel-styled UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built with
 
-## Expanding the ESLint configuration
+- React + Vite
+- Tailwind CSS
+- Recharts (for the stats chart)
+- Deployed on Netlify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Why I built this
+
+I wanted a personal habit/notes tool with a vibe I actually enjoy looking at every day, and to build something end-to-end for my portfolio — from a blank terminal to a live, deployed, themeable app.
+
+## Running locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Screenshots
+
+_Add a screenshot or two here of your favorite theme!_
